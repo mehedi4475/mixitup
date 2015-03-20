@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MixItUp</title>
+</head>
+<style type="text/css">
+	
+	#Container .mix{
+    display: none;
+}
+
+.filter{
+	padding:10px 30px;
+	display: inline-block;
+	background-color: red;
+	color:white;
+}
+
+</style>
+<body>
+<div class="filter" data-filter="all">Show All</div>
+<div class="filter" data-filter=".category-1">Category 1</div>
+<div class="filter" data-filter=".category-2">Category 2</div>
+
+	<div id="Container">
+	    <div class="mix category-1" data-my-order="1">
+			<img src="http://placehold.it/150x150">
+	    </div>
+	    <div class="mix category-2" data-my-order="1">
+			<img src="http://placehold.it/150x150">
+	    </div>
+	    <div class="mix category-2" data-my-order="1">
+			<img src="http://placehold.it/150x150">
+	    </div>
+	    <div class="mix category-1" data-my-order="1">
+			<img src="http://placehold.it/150x150">
+	    </div>
+	    <div class="mix category-1" data-my-order="1">
+			<img src="http://placehold.it/150x150">
+	    </div>
+	    <div class="mix category-1" data-my-order="1">
+			<img src="http://placehold.it/150x150">
+	    </div><div class="mix category-1" data-my-order="1">
+			<img src="http://placehold.it/150x150">
+	    </div>
+	    <div class="mix category-2" data-my-order="1">
+			<img src="http://placehold.it/150x150">
+	    </div>	  
+	   
+	</div>
+
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+  			$('#Container').mixItUp();  
+		});
+	</script>
+	
+</body>
+</html>
